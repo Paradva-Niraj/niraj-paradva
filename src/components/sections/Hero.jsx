@@ -1,16 +1,16 @@
-import React from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect";
 import HeroBgAnimation from "../HeroBgAnimation";
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import {
   headContainerAnimation,
   headContentAnimation,
   headTextAnimation,
 } from "../../utils/motion";
-import StarCanvas from "../canvas/Stars";
+
+const StarCanvas = lazy(() => import("../canvas/Stars"));
 
 const HeroContainer = styled.div`
   display: flex;
@@ -207,6 +207,11 @@ const HeroBg = styled.div`
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+  background: radial-gradient(
+    circle at 70% 45%,
+    ${({ theme }) => theme.primary + "18"} 0%,
+    transparent 48%
+  );
 
   @media (max-width: 960px) {
     justify-content: center;
@@ -215,11 +220,41 @@ const HeroBg = styled.div`
 `;
 
 const Hero = () => {
+  const [showStars, setShowStars] = useState(false);
+
+  useEffect(() => {
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+    const saveData = navigator.connection?.saveData === true;
+
+    if (prefersReducedMotion || saveData) {
+      return undefined;
+    }
+
+    const showStarCanvas = () => setShowStars(true);
+
+    if ("requestIdleCallback" in window) {
+      const idleCallbackId = window.requestIdleCallback(showStarCanvas, {
+        timeout: 1200,
+      });
+
+      return () => window.cancelIdleCallback(idleCallbackId);
+    }
+
+    const timeoutId = window.setTimeout(showStarCanvas, 400);
+    return () => window.clearTimeout(timeoutId);
+  }, []);
+
   return (
     <div id="About">
       <HeroContainer>
         <HeroBg>
-          <StarCanvas />
+          {showStars && (
+            <Suspense fallback={null}>
+              <StarCanvas />
+            </Suspense>
+          )}
           <HeroBgAnimation />
         </HeroBg>
 
@@ -260,7 +295,12 @@ const Hero = () => {
                   transition={{ duration: 1, ease: "easeOut" }}
                   whileHover={{ scale: 1.05 }}
                 >
-                  <Img src="nicxx.jpg" alt="Niraj Paradva" />
+                  <Img
+                    src="nicxx-720.jpg"
+                    alt="Niraj Paradva"
+                    decoding="async"
+                    fetchPriority="high"
+                  />
                 </motion.div>
               </motion.div>
             </HeroRightContainer>

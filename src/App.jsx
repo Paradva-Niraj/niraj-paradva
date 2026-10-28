@@ -6,7 +6,6 @@ import { BrowserRouter } from 'react-router-dom'
 // sections import
 import Hero from "./components/sections/Hero";
 import Skills from "./components/sections/Skills"
-import StartCanvas from "./components/canvas/Stars";
 import Experience from "./components/sections/Experience";
 import Education from "./components/sections/Education";
 import Projects from "./components/sections/Projects";
@@ -54,12 +53,11 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <Body>
-            <StartCanvas />
             <div>
               <Hero />
               <Wrapper>
                 <Skills />
-                {/* <Experience /> */}
+                <Experience />
               </Wrapper>
               <Projects />
               <Wrapper>

@@ -17,11 +17,24 @@ const Card = styled.div`
   }
 `;
 
-const Image = styled.img`
+const ImageFrame = styled.div`
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: ${({ $multiple }) => ($multiple ? "10px" : "0")};
+  padding: ${({ $multiple }) => ($multiple ? "10px" : "0")};
+  background-color: ${({ theme }) => theme.primary + "10"};
   border-bottom: 2px solid ${({ theme }) => theme.primary + "40"};
+  box-sizing: border-box;
+  overflow: hidden;
+`;
+
+const Image = styled.img`
+  width: ${({ $multiple }) => ($multiple ? "calc(50% - 5px)" : "100%")};
+  height: 100%;
+  object-fit: ${({ $multiple }) => ($multiple ? "contain" : "cover")};
 `;
 
 const Content = styled.div`
@@ -103,9 +116,28 @@ const Avatar = styled.img`
 `;
 
 const ProjectCard = ({ project }) => {
+  const projectImages = project.images?.length
+    ? project.images
+    : [project.image];
+  const hasMultipleImages = projectImages.length > 1;
+
   return (
     <Card>
-      <Image src={project.image} alt={project.title} />
+      <ImageFrame $multiple={hasMultipleImages}>
+        {projectImages.map((image, index) => (
+          <Image
+            key={image}
+            src={image}
+            alt={
+              hasMultipleImages
+                ? `${project.title} screenshot ${index + 1}`
+                : project.title
+            }
+            $multiple={hasMultipleImages}
+            loading="lazy"
+          />
+        ))}
+      </ImageFrame>
       <Content>
         <Title>{project.title}</Title>
         <Date>{project.date}</Date>

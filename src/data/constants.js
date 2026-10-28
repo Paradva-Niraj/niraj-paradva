@@ -1,14 +1,14 @@
 export const Bio = {
   name: "Niraj Paradva",
   roles: [
-    "Frontend Developer",
-    "Backend Developer",
-    "MERN Stack Engineer",
-    "Problem Solver",
-    "Lifelong Learner",
+    "Software Engineer",
+    "Angular & MEAN Stack Developer",
+    "Smart TV App Developer",
+    "Full-Stack Developer",
+    "MCA Graduate",
   ],
   description:
-    "Aspiring web developer with front-end skills and a growing interest in backend technologies. Passionate aboutbuilding full-stack web applications through hands-on projects while continuously expanding my technical capabilities.",
+    "Software Engineer at WISEDV INC. specializing in Angular, TypeScript, Node.js, MongoDB, and Smart TV applications for LG webOS and Samsung Tizen. MCA graduate with hands-on experience building full-stack applications, integrating REST APIs, and delivering production features.",
   github: "https://github.com/Paradva-Niraj",
   resume:
     "https://drive.google.com/file/d/1TF6sAZC0g6VIX2Xl-NGxiGMQos7AJHgK/view?usp=sharing",
@@ -28,6 +28,11 @@ export const skills = [
           "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
       },
       {
+        name: "Angular Js",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnmzo2qGG21FT8AcleNGqPZcMDTPL4tUeLwVmUfQq7jg&s",
+      },
+      {
         name: "Redux",
         image:
           "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
@@ -45,12 +50,17 @@ export const skills = [
       {
         name: "CSS",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
+          "https://upload.wikimedia.org/wikipedia/commons/a/ab/Official_CSS_Logo.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
       },
       {
-        name: "JavaScript",
+        name: "Java Script",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+          "https://upload.wikimedia.org/wikipedia/commons/d/d7/Logo_of_TC39.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
+      },
+      {
+        name: "Type Script",
+        image:
+          "data:image/png;base64,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",
       },
       {
         name: "Bootstrap",
@@ -123,10 +133,10 @@ export const skills = [
         name: "npm",
         image: "https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg",
       },
-      {
-        name: "pip",
-        image: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Pip-logo.svg",
-      },
+      // {
+      //   name: "pip",
+      //   image: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Pip-logo.svg",
+      // },
       {
         name: "TinyHost",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPJwVf2N2wd7pCmhuU94B0A4-YeSXpnIr7OMw8-PSuVlNef8rpo8gE1lLRkTDbVnCqq-c&usqp=CAU",
@@ -134,7 +144,7 @@ export const skills = [
       {
         name: "Netlify",
         image:
-          "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcBAMAAACAI8KnAAAALVBMVEX////f9PQAt7QAu7iM2dj7/v43xMKe3934/f3a8vLGz8+Mn54hwL0ANDI9xcM3IX9gAAAAUUlEQVR4AWOgHDAKoHCZFFC4zAa4uSwBKFynVBS9YeocDUhc1ko0e1fvgrF4jI2NGvbe5lA2Nj6AxkUoRjMKt0VOT5kU0B1J2EcI76MHDsUAANZSEj24Z6GKAAAAAElFTkSuQmCC",
       },
     ]
   },
@@ -220,7 +230,7 @@ export const skills = [
       {
         name: "VS Code",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
+          "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAhFBMVEVHcEwAesEAfcMKjtoAcccAe8IYnucAaK4AfMMAc7gAi9MAdLkAfcIUk90Ai9QAaKwkrfQAeL8AfcQAfMUKjNkfnvAms/MYltcjqfIho/IAbbEAdbcAeLogoPEAg9AipvIAhtEAjNQlsPMAgM8mtPUAidMkrPIkrvMAfcwAjtUAerwAkNXfBl+DAAAAGHRSTlMA2GWK/ggn/j6SnyYdEuHolrxO6fG6uvBYp4CfAAABBUlEQVQokX3T23KCMBCA4UXEBESQ1h4MqBxrAu//ft3NhoLA9L9i8s2EIVkA1oVf59PGsi3rVdt+HjbN6wk3OXjvCWusPS/shNQXwmJdv9qxsM1w2lsWS/SHS8z25iwX7dMGkTGD2ZHtaB0rPHg6NNgwRPjpuSsE+OFAVpgxSaicSZgQDhWXCyIvoDd8c/gUMxotFG35ihAkHVWVQsIa07Lj1hgrJZquK7EuYnxweGQKE7rkkmCOUllMI2v3eylnaE1leIx3lw9w5SAk4+Mb1ftD1HQ8eIfN/jEiHKcraziHt8VlW9P76822HBP9D+KAaT2iv0QcTUSij83JzQi3CQsv7nf4BV/QMRepMTOQAAAAAElFTkSuQmCC",
       },
       {
         name: "Postman",
@@ -269,106 +279,47 @@ export const skills = [
 
 export const experiences = [
   {
-    id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/neurobit.jpeg?alt=media&token=1cacbb7b-e5ea-4efb-9b3d-f5a31b9564ad",
-    role: "Frontend Engineer Intern",
-    company: "Neurobit",
-    date: "June 2023 - Nov 2023",
-    desc: "Enhanced user experiences on Neurobit PSG & Hybrid, Portals by resolving bugs & reduced load time by 40%. Built Neurobit Analytics portal using React Js with seamless interaction of REST APIs using AXIOS optimized with React Query. Refactored previous code to TypeScript, updated with new dependency and integrated Vite with Jest for Unit Testing.",
-    skills: [
-      "ReactJS",
-      "Redux",
-      "NodeJs",
-      "Material UI",
-      "HTML",
-      "CSS",
-      "JavaScript",
-    ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
-  },
-  {
     id: 1,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-    role: "DevOps & Fullstack Engineering Intern",
-    company: "Flipr Inovations Pvt. Ltd.",
-    date: "Aug 2023 - Oct 2023",
-    desc: "Built Flipr Connect Platforms using React Js integrated GraphQL with AXIOS, created High level Design and Figma design. Built Backend with GraphQL and Node JS and connected with MongoDb - Reducing API calls by 20%. Dockerized and automated with Kubernetes & Jenkins CI/CD deployed in AWS-EC2 added Prometheus & Grafana for monitoring.",
+    img: "https://wisedv.com/assets/images/nav_logo.png",
+    logoFit: "contain",
+    role: "Junior Software Engineer",
+    company: "WISEDV INC.",
+    companyUrl: "https://www.linkedin.com/company/wisedv-inc/",
+    date: "Apr 2026 - Present",
+    location: "Remote · Surat, Gujarat, India",
+    desc: "Developing and maintaining Smart TV applications with the MEAN Stack for LG webOS and Samsung Tizen OS. My work includes frontend development, backend services, REST API integration, debugging, performance improvements, and delivering production features for TV platforms.",
     skills: [
-      "Docker",
-      "Terraform",
-      "AWS",
-      "EC2",
-      "Portainer",
-      "Nginx",
-      "JavaScript",
+      "Angular",
       "TypeScript",
-      "Node Js",
-      " Next Js",
-    ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1696514649120.jpeg?alt=media&token=e7f6757b-edfa-4138-a692-d6709eeef3e2",
-  },
-  {
-    id: 2,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Rudraksha.jpeg?alt=media&token=8f83f41e-d0a1-486f-9c7f-dd4cd1d09e8d",
-    role: "Android Developer Intern",
-    company: "Rudraksha Welffare Foundation",
-    date: "June 2021 - Oct 2021",
-    desc: "• Built RudraShakti - Astrologer App, with MVVM Architecture using Java and Android Studio integrating Firebase SDK. Created One to One video call integration with Socket.IO and Firebase cloud functions and integrated with Retrofit. Created Low Level Design and converted Figma design to XML code.",
-    skills: [
-      "Android",
-      "Java",
-      "Kotlin",
-      "XML",
-      "Node Js",
-      "Cloud Firestore",
-      "Firebase",
-      "Figma",
-    ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
-  },
-  {
-    id: 3,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-    role: "Fullstack Externship",
-    company: "Flipr",
-    date: "June 2023 - July 2023",
-    desc: "Built an employee management full stack web app used Docker and deployed on AWS ec2. I was the top performer in the program.",
-    skills: [
-      "ReactJS",
-      "Redux",
-      "NodeJs",
-      "Material UI",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Docker",
-      "AWS",
+      "Node.js",
       "MongoDB",
+      "REST APIs",
+      "LG webOS",
+      "Samsung Tizen",
+      "React",
+      "Python",
     ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/1691181448873.jpeg?alt=media&token=ee85eb8f-7247-43cd-9a1d-ce9f58ea62a6",
   },
   {
-    id: 4,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/gdsc.jpeg?alt=media&token=c162329c-efaa-4be8-a173-8d3f4c48ea70",
-    role: "Android Developer",
-    company: "DSC KIIT",
-    date: "Nov2021 - Present",
-    desc: "As an Android developer at the Google Developers Student Club (GDCS), I have had the opportunity to work on exciting projects and collaborate with talented developers who share my passion for technology. Through my involvement with GDCS, I have also had the opportunity to host and participate in numerous events, including hackathons, study jams, and workshops.",
+    id: 0,
+    img: "https://wisedv.com/assets/images/nav_logo.png",
+    logoFit: "contain",
+    role: "Software Engineer Intern",
+    company: "WISEDV INC.",
+    companyUrl: "https://www.linkedin.com/company/wisedv-inc/",
+    date: "Dec 2025 - Apr 2026",
+    location: "Vadodara, Gujarat, India",
+    desc: "Gained hands-on experience in MEAN Stack and Smart TV application development for LG webOS and Samsung Tizen OS. Contributed to production applications through feature development, debugging, backend integration, and REST API implementation.",
     skills: [
-      "Leadership",
-      "Mobile Application Development",
-      "Kotlin",
-      "XML",
-      "Figma",
+      "MEAN Stack",
+      "Angular",
+      "TypeScript",
+      "Node.js",
+      "MongoDB",
+      "REST APIs",
+      "LG webOS",
+      "Samsung Tizen",
     ],
-  },
-  {
-    id: 5,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/girlScript.jpeg?alt=media&token=e656a621-cf3c-4230-bf0f-e74b4cec6035",
-    role: "Open Source Contributor ",
-    company: "GirlScript Summer of Code",
-    date: "May 2023 - Present",
-    desc: "Contributed to different open-source projects and learn from industry experts",
   },
 ];
 
@@ -377,10 +328,10 @@ export const education = [
     id: 0,
     img: "./msu.png",
     school: "The Maharaja Sayajirao University of Baroda",
-    date: "Aug 2024 - 2026",
-    grade: "76% Expected",
-    degree: "Master in Computer Application",
-    desc: "I am currently pursuing my Master's in Computer Application at The Maharaja Sayajirao University of Baroda.I am actively enhancing my skills in modern web technologies such as React.js, Node.js, Express.js, and MongoDB. I also have hands-on experience with tools like Git, GitHub, Vercel, and deployment platforms such as Render and TinyHost. My focus is on building full-stack applications and continuously learning new frameworks, libraries, and best practices to stay up-to-date in the fast-evolving tech landscape."
+    date: "2024 - 2026",
+    grade: "79.43% · First Class with Distinction",
+    degree: "Master of Computer Applications (MCA)",
+    desc: "Completed my Master of Computer Applications at The Maharaja Sayajirao University of Baroda with 79.43%. During the program, I strengthened my skills in full-stack development, software engineering, REST APIs, databases, and modern JavaScript technologies through practical projects and industry experience."
   },
   {
     id: 1,
@@ -413,19 +364,47 @@ export const education = [
 
 export const projects = [
   {
+    id: 13,
+    title: "AI Todo App",
+    date: "Sep 2025",
+    description:
+      "An AI-powered Flutter task planner built to turn goals into optimized action plans. It creates smart reminders, suggests task priorities, breaks down complex work, and detects schedule conflicts to help users work more efficiently.",
+    images: [
+      "https://github.com/user-attachments/assets/ac2d6555-5512-40b0-befb-41f6b1e4c069",
+      "https://github.com/user-attachments/assets/f0261b57-28f3-4dcd-8ff4-b9716dc96b74",
+    ],
+    tags: ["Flutter", "Dart", "AI", "REST API", "Notifications"],
+    category: "AI",
+    github: "https://github.com/Paradva-Niraj/AI-todo",
+    webapp: "https://nicxx1.itch.io/ai-todo",
+  },
+  {
+    id: 14,
+    title: "Quick Board",
+    date: "Aug 2025",
+    description:
+      "A centralized university noticeboard built to replace scattered campus updates. It gives admins, faculty, and students role-based access to courses, notices, materials, and institution-wide communication.",
+    image:
+      "https://res.cloudinary.com/quick-board/image/upload/v1793166043/Screenshot_2026-10-28_110451_icmcts.png",
+    tags: ["React", "Vite", "ASP.NET Core", "MySQL", "Entity Framework"],
+    category: "web app",
+    github: "https://github.com/Paradva-Niraj/Quick_Board",
+    webapp: "https://quick-board-umber.vercel.app",
+  },
+  {
     id: 0,
     title: "chat-app",
     date: "Mar 2024",
     description:
       "A full‑stack real‑time chat application built with React, Node.js, Express and Socket.IO. Features include one‑to‑one , typing indicators, and no history free dust app",
     image:
-      "https://private-user-images.githubusercontent.com/182334902/443171713-bffdc6f9-39d3-4967-b46c-92c0d3cee3e4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTI5OTk2MTEsIm5iZiI6MTc1Mjk5OTMxMSwicGF0aCI6Ii8xODIzMzQ5MDIvNDQzMTcxNzEzLWJmZmRjNmY5LTM5ZDMtNDk2Ny1iNDZjLTkyYzBkM2NlZTNlNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcyMFQwODE1MTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04ZTg5NDliMWM0ZmZiNGViZTVhNGU0MTZiZTAyYWY0OTg0YzdmNjhhNjNkOTg2ZjgzMDcwNzMzMmZmMDY1MDNjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.RxA9oAST_0CIE7KoqlCpC7lk-UW3koDs5-q_YkucJQw",
+      "https://private-user-images.githubusercontent.com/182334902/443171713-bffdc6f9-39d3-4967-b46c-92c0d3cee3e4.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTMxNjIwNTgsIm5iZiI6MTc5MzE2MTc1OCwicGF0aCI6Ii8xODIzMzQ5MDIvNDQzMTcxNzEzLWJmZmRjNmY5LTM5ZDMtNDk2Ny1iNDZjLTkyYzBkM2NlZTNlNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAyOFQwNDI5MThaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xY2FjYzFkNGY4NTVjNjE5MzBhYmIyMDg4MDBhOWQ0MWY5OTA2MjVkZWJiZGZkZjFjYTExYWIwN2E4NjEwMGZlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.8WX4asxv5S1FGrg5gyXMEmZ8DgbM4ESYnVpmNEHs0W0",
     tags: ["React", "Node.js", "Express", "Socket.IO", "MongoDB"],
     category: "web app",
     github: "https://github.com/Paradva-Niraj/chat-app",
     webapp: "https://chat-app-paradva.netlify.app",
   },
-  {
+  /* {
     id: 1,
     title: "image-enhancer",
     date: "Feb 2024",
@@ -437,7 +416,7 @@ export const projects = [
     category: "AI",
     github: "https://github.com/Paradva-Niraj/image-enhancer",
     webapp: "https://image-enhancer-paradva.netlify.app",
-  },
+  }, */
   {
     id: 2,
     title: "blog-app-react",
@@ -451,7 +430,7 @@ export const projects = [
     github: "https://github.com/Paradva-Niraj/blog-app-react",
     webapp: "https://blog-paradva.vercel.app",
   },
-  {
+  /* {
     id: 3,
     title: "assigment-management-system",
     date: "Dec 2023",
@@ -463,7 +442,7 @@ export const projects = [
     category: "desktop app",
     github: "https://github.com/Paradva-Niraj/assigment-management-system",
     webapp: "https://ams-paradva.netlify.app",
-  },
+  }, */
   {
     id: 4,
     title: "sundown-frontend",
@@ -516,7 +495,7 @@ export const projects = [
     github: "https://github.com/Paradva-Niraj/Vaadin_Chat_App",
     webapp: "https://vaadin-chat-paradva.herokuapp.com",
   },
-  {
+  /* {
     id: 8,
     title: "PromptGenerator",
     date: "Jul 2023",
@@ -528,7 +507,7 @@ export const projects = [
     category: "AI",
     github: "https://github.com/Paradva-Niraj/PromptGenerator",
     webapp: "https://prompt-generator-paradva.netlify.app",
-  },
+  }, */
   // {
   //   id: 9,
   //   title: "password-generater",
@@ -542,7 +521,7 @@ export const projects = [
   //   github: "https://github.com/Paradva-Niraj/password-generater",
   //   webapp: "https://password-gen-paradva.netlify.app",
   // },
-  {
+  /* {
     id: 10,
     title: "currency-converter-js",
     date: "May 2023",
@@ -554,8 +533,8 @@ export const projects = [
     category: "web app",
     github: "https://github.com/Paradva-Niraj/currency-converter-js",
     webapp: "https://currency-converter-paradva.netlify.app",
-  },
-  {
+  }, */
+  /* {
     id: 11,
     title: "tweet-app-django",
     date: "Apr 2023",
@@ -567,20 +546,20 @@ export const projects = [
     category: "web app",
     github: "https://github.com/Paradva-Niraj/tweet-app-django",
     webapp: null,
-  },
-  {
+  }, */
+  /* {
     id: 12,
     title: "library-book-management",
     date: "Mar 2023",
     description:
       "A complete book management system built with HTML,CSS,PHP on the frontend authentication with cookies and MySQL as the database. Allows librarians to add, update, and remove books, and patrons to search and reserve copies.",
     image:
-      "https://private-user-images.githubusercontent.com/182334902/399085824-82200ffe-429f-4714-8efc-7e7958482715.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTI5OTk2NjAsIm5iZiI6MTc1Mjk5OTM2MCwicGF0aCI6Ii8xODIzMzQ5MDIvMzk5MDg1ODI0LTgyMjAwZmZlLTQyOWYtNDcxNC04ZWZjLTdlNzk1ODQ4MjcxNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcyMFQwODE2MDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01YzRlYzliYmJlODBiYTNkYTUyNGVmZGI4ZDA2MWUxNjlkZjM2MjI1OGZlZWI2NmRlNjQ3OTNkOWIzYzgyOWM5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.P_XecwEr1oLO_QfMHqK1d6Y5ecNiEtGTDQAayMK1VRw",
+      "https://private-user-images.githubusercontent.com/182334902/399085915-03245ab3-f945-4faf-912a-9f7b6649ec8d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTMxNjIxMjUsIm5iZiI6MTc5MzE2MTgyNSwicGF0aCI6Ii8xODIzMzQ5MDIvMzk5MDg1OTE1LTAzMjQ1YWIzLWY5NDUtNGZhZi05MTJhLTlmN2I2NjQ5ZWM4ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAyOFQwNDMwMjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yOTRkODI2MTkwMWNiYmFmZDVhZmY2OWQxY2JmNDFiZGZmYjUwZGM1ZmRhZjJjOTE3NGQ3ZTI0ODliODcxOThmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.PrPC2izUgCcj05P5CcDBZVYfJfgc3Pl-SkGgRiFuMno",
     tags: ["HTML", "CSS", "JS", "PHP"],
     category: "web app",
     github: "https://github.com/Paradva-Niraj/library-book-management",
     webapp: "https://library-management-paradva.firebaseapp.com",
-  },
+  }, */
 ];
 
 
